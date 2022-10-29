@@ -1,0 +1,41 @@
+@import "libs/bootstrap-reboot.min";
+
+* {
+  font-family: "TTSevers", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TTSevers";
+  src: url("../fonts/TTSevers-Regular.woff2") format("woff2"),
+    url("../fonts/TTSevers-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTSevers";
+  src: url("../fonts/TTSevers-Medium.woff2") format("woff2"),
+    url("../fonts/TTSevers-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "TTSevers", sans-serif;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.hamburger{
+  display: none;
+}
+
+@import './header';
+@import './hero';
+@import './news';
