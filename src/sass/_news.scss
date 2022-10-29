@@ -1,11 +1,132 @@
-.news__blocks{
+.news {
+  background: #f7f7f7;
+  padding: 64px 64px 32px 64px;
+  position: relative;
+  .news__blocks {
     display: flex;
-    .allNews{
+    .allNews {
+      padding: 16px;
+      width: 304px;
+      height: 1495px;
+      background: #ffffff;
+      border-radius: 12px;
+      .allNews__items {
+        margin-top: 34px;
+        .allNews__items-item {
+          .bold {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #182840;
+          }
+          .fire {
+            span {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              color: #ff7534;
+            }
+          }
+          .subdesc {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            color: #979ea9;
+            .span {
+              display: block;
+              margin-top: 5px;
+            }
+            img {
+              margin-right: 12px;
+            }
+          }
+          padding-top: 24px;
+          .desc {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #182840;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #ebebeb;
+            .time {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              color: #707070;
+            }
+          }
+        }
+      }
+
+      .allNews__title {
         width: 100%;
-height: 1495px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 140%;
+          color: #2d2d2d;
+        }
+        a {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 140%;
+          color: #182840;
+        }
+      }
+      .allNewss__categories {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        .news__categories-item {
+          margin-right: 24px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #919191;
+          padding: 3px 10px;
+        }
+        .active {
+          color: #ff7534;
+
+          background: #ffeae0;
+          border-radius: 4px;
+        }
+      }
     }
-    .categoryNews{
-       width: 100%; 
-       height: 1495px;
+    .categoryNews {
+      width: 100%;
+      height: 1495px;
     }
+    .allNews__loadMore {
+      border: 1px solid rgb(126, 124, 124);
+      border-radius: 6px;
+      height: 40px;
+      position: absolute;
+      bottom: 50px;
+      width: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #182840;
+      cursor: pointer;
+      &::before{
+        content: url(../img/news/storke.png);
+        margin-right: 5px;
+        margin-top: 3px;
+      }
+    }
+  }
 }
